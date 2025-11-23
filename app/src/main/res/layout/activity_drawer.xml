@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/rounded_drawer_background"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:ignore="ScrollViewSize">
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/drawerClose"
+                android:layout_width="65dp"
+                android:layout_height="55dp"
+
+                android:layout_marginLeft="11dp"
+                android:layout_marginTop="8dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:foreground="?attr/selectableItemBackgroundBorderless"
+                android:src="?attr/homeAsUpIndicator"
+                app:backgroundTint="#062232"
+                app:layout_anchor="@+id/chip2"
+                app:layout_anchorGravity="start|center"
+                app:tint="#EBEBEB" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="21dp" />
+
+
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="51dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+
+                >
+
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/imageButton3"
+                        android:clickable="false"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:backgroundTint="@color/white"
+                        app:srcCompat="@drawable/cyclicvolt" />
+
+                    <Button
+                        android:id="@+id/cycbutton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="#035085"
+                        android:text="Cyclic Voltammetry"
+                        android:textColor="@color/white" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/imageButton4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:clickable="false"
+
+                        android:backgroundTint="@color/white"
+                        app:srcCompat="@drawable/diffpulsemetry" />
+
+                    <Button
+                        android:id="@+id/difbutton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="#035085"
+                        android:text="Differential Pulsementry"
+                        android:textColor="@color/white" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/imageButton6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:clickable="false"
+
+                        android:backgroundTint="@color/white"
+                        app:srcCompat="@drawable/amperometry" />
+
+                    <Button
+                        android:id="@+id/ampbutton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="#035085"
+                        android:text="Amperometry"
+                        android:textColor="@color/white" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/imageButton7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="47dp"
+                        android:layout_weight="1"
+                        android:clickable="false"
+                        android:backgroundTint="@color/white"
+                        app:srcCompat="@drawable/potentiometry" />
+
+                    <Button
+                        android:id="@+id/potbutten"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="#035085"
+                        android:text="Potentiometry"
+                        android:textColor="@color/white" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="51dp" />
+
+
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="180dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="bottom"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="68dp"
+                    android:layout_height="43dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/parametres" />
+
+                <Button
+                    android:id="@+id/generalsettingsbutton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="47dp"
+                    android:text="Settings"
+
+
+                    app:cornerRadius="40dp" />
+
+                <ImageView
+                    android:layout_width="42dp"
+                    android:layout_height="43dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/feedback" />
+
+                <Button
+                    android:id="@+id/feedback"
+                    android:layout_width="wrap_content"
+                    android:layout_height="47dp"
+                    android:layout_marginRight="15dp"
+                    android:text="Feedback"
+                    app:cornerRadius="40dp" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>
